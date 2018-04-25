@@ -32,11 +32,11 @@ At folder "wbr" we have generated php smiffer with txt file in order to gather a
 
 File .htaccess forces .jpg to work as php
 
-File index.html is a simple form for sending information to test.php that creates sniffer
+File maker.html is a simple form for sending information to test.php that creates sniffer
 
 File wbr.zip is php sniffer that unzips to folder wbr/$name we take
 
-File test.php is a main file for generating,unziping and sending email about project creation and inforation
+File snif.php is a main file for generating,unziping and sending email about project creation and inforation
 
 File readme.md is created to get information about this project
 
