@@ -9,8 +9,6 @@
  <p><input type="submit" /></p>  
 
 
-
-
 Text <?php echo htmlspecialchars($_POST['text']); ?>.<br>  
 Link to image <?php echo (int)$_POST['image']; ?>  <br>   
 Iframe <?php echo (int)$_POST['iframe']; ?>  <br>
@@ -19,19 +17,13 @@ Sniffer html <?php echo (int)$_POST['html']; ?>  <br>
 
 echo "<h1> Preview </h1>";
 
-
 Link send to target:<br><a href=<?php echo $path="/i/"; ?>/<?php echo htmlspecialchars($_POST['html']); ?>.jpg>Link</a><br>
 Link for information:<br><a href=<?php echo $path="/wbr/"; ?>/<?php echo htmlspecialchars($_POST['html']); ?>/mangol.txt>Link</a><br>
 Clean link: <br><a href=<?php echo $path="/wbr/"; ?>/<?php echo htmlspecialchars($_POST['html']); ?>/index.php>Link</a><br>
 
-
 <br>
 
-
-
 <?php
-
-
 
 //Config
    $path_full="http://example.com/";
@@ -49,10 +41,7 @@ Clean link: <br><a href=<?php echo $path="/wbr/"; ?>/<?php echo htmlspecialchars
   $hook = "wbr/".$html;
   $email = $_POST['email'];
 
-
-
 //html variables
-
 
 $text_h= ' <meta property="og:title" content="';
 $close='">';
@@ -81,7 +70,6 @@ fwrite($myfile, $txt);
 fclose($myfile);
 
 ?>
-
 
 
 <?php
